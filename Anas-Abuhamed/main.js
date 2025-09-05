@@ -8,7 +8,7 @@ function Student(name, age, grade) {
     if (validateGrade(grade)) {
         _grade = grade;
     }
-    this.introduce = function () {
+    this.prototype.introduce = function () {
         if (_grade === null) {
             console.log("Invalid grade. Please enter either 'A' or 'F'.");
             return;
